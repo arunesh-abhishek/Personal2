@@ -18,4 +18,7 @@ struct Personal2Tests {
         print(2+2)
     }
 
+    @Test func testDiff() async throws {
+        print(2-2)
+    }
 }
