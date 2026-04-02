@@ -24,3 +24,8 @@ jobs:
         env:
             SCHEME: "Personal2"
             DEVICE: "iPhone 16 pro"
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+            name: ios-build
+            path: build
