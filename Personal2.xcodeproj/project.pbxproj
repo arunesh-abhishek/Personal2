@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		63EECCD62F7D9DC7004DED6A /* .env.dev in Resources */ = {isa = PBXBuildFile; fileRef = 63EECCD52F7D9DC0004DED6A /* .env.dev */; };
+		63EECCD82F7DA3B8004DED6A /* .env.feature in Resources */ = {isa = PBXBuildFile; fileRef = 63EECCD72F7DA3AD004DED6A /* .env.feature */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		639BA1E22E9FA98D00881352 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		639BA1CB2E9FA98B00881352 /* Personal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Personal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639BA1E12E9FA98D00881352 /* Personal2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Personal2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		639BA1EB2E9FA98D00881352 /* Personal2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Personal2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EECCD52F7D9DC0004DED6A /* .env.dev */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.dev; sourceTree = "<group>"; };
+		63EECCD72F7DA3AD004DED6A /* .env.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.feature; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +95,8 @@
 		639BA1C22E9FA98B00881352 = {
 			isa = PBXGroup;
 			children = (
+				63EECCD72F7DA3AD004DED6A /* .env.feature */,
+				63EECCD52F7D9DC0004DED6A /* .env.dev */,
 				639BA1CD2E9FA98B00881352 /* Personal2 */,
 				639BA1E42E9FA98D00881352 /* Personal2Tests */,
 				639BA1EE2E9FA98D00881352 /* Personal2UITests */,
@@ -225,6 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EECCD62F7D9DC7004DED6A /* .env.dev in Resources */,
+				63EECCD82F7DA3B8004DED6A /* .env.feature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +300,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FM45LJ43V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Personal2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,6 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FM45LJ43V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Personal2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

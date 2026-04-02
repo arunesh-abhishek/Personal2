@@ -1,0 +1,43 @@
+default_platform(:ios)
+
+platform :ios do
+
+  desc "clean build folder"
+  lane :clean do
+  sh "rm -rf build"
+  end
+
+  desc "Run unit tests"
+  lane :test do
+    run_tests(
+      scheme: ENV["SCHEME"],
+      devices: [ENV["DEVICE"]]
+    )
+  end
+
+  desc "Build app"
+  lane :build do
+    build_app(
+      scheme: ENV["SCHEME"],
+      skip_codesigning: true,
+      skip_package_ipa: true,
+      output_directory: "build",
+
+    )
+  end
+
+  desc "CI Pipeline"
+  lane :ci do
+    puts "🚀 Starting CI"
+    clean
+
+    test
+
+    puts "✅ Tests passed"
+
+    build
+
+    puts "🎉 CI Success"
+  end
+
+end
