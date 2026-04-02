@@ -25,7 +25,7 @@ jobs:
             SCHEME: "Personal2"
             DEVICE: "iPhone 16 pro"
       - name: Upload Build Artifact
-        uses: actions/checkout@v4
+        uses: actions/upload-artifact@v4
         with:
             name: ios-build
             path: build
