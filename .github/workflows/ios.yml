@@ -21,3 +21,6 @@ jobs:
 
       - name: Run CI Pipeline
         run: fastlane ci
+        env:
+            SCHEME: "Personal2"
+            DEVICE: "iPhone 16 pro"

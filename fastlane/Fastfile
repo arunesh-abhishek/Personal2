@@ -10,15 +10,15 @@ platform :ios do
   desc "Run unit tests"
   lane :test do
     run_tests(
-      scheme: "Personal2",
-      devices: ["iPhone 11"]
+      scheme: ENV["SCHEME"],
+      devices: [ENV["DEVICE"]]
     )
   end
 
   desc "Build app"
   lane :build do
     build_app(
-      scheme: "Personal2",
+      scheme: ENV["SCHEME"],
       skip_codesigning: true,
       skip_package_ipa: true,
       output_directory: "build",

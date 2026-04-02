@@ -25,4 +25,8 @@ struct Personal2Tests {
     @Test func testProduct() async throws {
         print(2*2)
     }
+    
+    @Test func testReminder() async throws {
+        print(2%2)
+    }
 }
